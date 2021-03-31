@@ -29,10 +29,6 @@ namespace ScriptableEventSystem
         public void OnEventRaised(GameEvent gameEvent)
         {
             m_unityEvents[m_gameEvents.IndexOf(gameEvent)].Invoke();
-            /*if (m_events.ContainsKey(gameEvent))
-            {
-                m_events[gameEvent].Invoke();
-            }*/
         }
 
     }
